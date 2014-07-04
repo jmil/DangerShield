@@ -1,4 +1,4 @@
-#include <CapSense.h>
+#include <CapacitiveSensor.h>
 
 /*
  * Danger Shield Example Sketch
@@ -59,7 +59,7 @@ int i = 0;
 #define BUTTON_TEST 6
 #define SEVENSEG_TEST 7
 
-CapSense   cs_9_2 = CapSense(9,2);   //Initializes CapSense pins
+CapacitiveSensor cs_9_2 = CapacitiveSensor(9,2);   //Initializes CapSense pins
 
 void setup()
 {
@@ -134,7 +134,7 @@ void loop()
   if(state == CAPSENSE_TEST) // Tests CapSense pad
   {
     long start = millis();
-    long total1 =  cs_9_2.capSense(30);
+    long total1 =  cs_9_2.capacitiveSensor(30);
     Serial.println(total1); 
     delay(10);
   }
