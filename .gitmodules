@@ -1,3 +1,6 @@
 [submodule "CapacitiveSensor"]
 	path = CapacitiveSensor
 	url = git@github.com:PaulStoffregen/CapacitiveSensor.git
+[submodule "DangerShield"]
+	path = DangerShield
+	url = git@github.com:sparkfun/DangerShield.git
